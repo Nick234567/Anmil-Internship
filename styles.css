@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.main {
+  padding: 40px;
+  width: 1040px;
+  margin: 0 auto;
+  background-color: peachpuff;
+  min-height: 100vh;
+}
+
+li {
+  font-size: 20px;
+  margin-top: 20px;
+}
