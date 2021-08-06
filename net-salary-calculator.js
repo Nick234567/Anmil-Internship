@@ -16,37 +16,51 @@ salaryArray.forEach(({ name, salary }) => {
   const sevenPercentTax = (7 * 10000) / 100;
 
   if (salary > 0 && salary <= 10000) {
-    const netSalary = salary - (2 * salary) / 100;     //Net salary of John Doe
+
+    //Net salary of John Doe
+
+    const netSalary = salary - (2 * salary) / 100;     
     printOutput(name, netSalary);                   
   } 
   
   else if (salary > 10000 && salary <= 20000)
    {
-    const taxOnRemainingSalaryAfterTenThousand = (4 * (salary - 10000)) / 100;
+     // Tax on remainig salary after Ten thousand 
+    const remainingTax1 = (4 * (salary - 10000)) / 100;
   
     //Total tax if salary is > 10000 or <= 20000
 
     const totalTax =
-      twoPercentTax + taxOnRemainingSalaryAfterTenThousand;
-    const netSalary = salary - totalTax;                           //Net salary of Jane Doe
+      twoPercentTax + remainingTax1;
+
+        //Net salary of Jane Doe
+
+    const netSalary = salary - totalTax;                           
     printOutput(name, netSalary);
   } 
   else if (salary > 20000 && salary <= 30000) 
   {
-    const taxOnRemainingSalaryAfterTwentyThousand =
+
+    // Tax on Remaining Salary After Twenty Thousand
+    const remainingTax2 =
       (7 * (salary - 20000)) / 100;
    
    //Total tax if salary is > 20000 or <= 30000
       const totalTax =
       twoPercentTax +
       fourPercentTax +
-      taxOnRemainingSalaryAfterTwentyThousand;
-    const netSalary = salary - totalTax;                     //Net salary of Jim Doe
+     remainingTax2;
+
+     //Net salary of Jim Doe
+     
+    const netSalary = salary - totalTax;                     
     printOutput(name, netSalary);
   }
    else if (salary > 30000) 
    {
-    const taxOnRemainingSalaryAfterThrityThousand =
+
+    // Tax on remaining salary after thrity thousand 
+    const remainingTax3 =
       (10 * (salary - 30000)) / 100;
 
       //Total tax if salary is >30000
@@ -54,7 +68,7 @@ salaryArray.forEach(({ name, salary }) => {
       twoPercentTax +
       fourPercentTax +
       sevenPercentTax +
-      taxOnRemainingSalaryAfterThrityThousand;
+      remainingTax3;
     const netSalary = salary - totalTax;                        //Net salary of John Doe
     printOutput(name, netSalary);
   }
