@@ -54,5 +54,14 @@ function check_palindrome( str )
   //Ex:2, End
 
 
+  //Ex:3, Start
+
+  let providedArray = [{id: 1, fullName:'John Doe'}, {id: 2, fullName:'Jim Doe'}, {id: 3, fullName:'Jane Doe'}];
+
+  // reduce all elments in the array into single object 
+  console.log(providedArray.reduce((acc, i)=> ({...acc, [i.id]:  {fullName:  i.fullName}}), {})) //(acc,i) =>(accumulator,current value)
+  //Ex:3, End
+
+
 
   
