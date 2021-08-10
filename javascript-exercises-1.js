@@ -41,5 +41,18 @@ function check_palindrome( str )
   //Ex: 1, End
 
 
+  //Ex:2, Start
+
+  let num = 2;
+  let expo = 3;
+  function cube(){
+      return Math.pow(num,expo); // number to the power exponential number // 2^3
+
+  }
+  console.log(cube())
+
+  //Ex:2, End
+
+
 
   
