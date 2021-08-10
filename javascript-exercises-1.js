@@ -63,5 +63,16 @@ function check_palindrome( str )
   //Ex:3, End
 
 
+  //Ex:4, Start
+  let providedObject = {1: { fullName:'John Doe'}, 2: {fullName:'Jim Doe'}, 3: {fullName:'Jane Doe'} };
+
+  //Object.keys return the array of the given object 
+let result = Object.keys(providedObject).map((key) => [Number(key), providedObject[key]]); 
+
+console.log(result)
+
+//Ex:4, End
+
+
 
   
