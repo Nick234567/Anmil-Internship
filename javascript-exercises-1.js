@@ -56,12 +56,16 @@ let y1 = 3;
 let x2 = 6;
 let y2= 7;
 
-let x = y2 -y1;
-let y = x2 - x1;
+ 
 
-let displacement = (math.sqrt(((x-2)-(x-1)*(x-2)-(x-1)) +((y-2)-(y-1)*(y-2)-(y-1)) ));
+function displacement(){
+ let x = y2 -y1;
+  let y = x2 - x1;
+  return Math.sqrt((x*x)+(y*y)); // distance between two points 
+  
+}
+console.log(displacement())
 
-console.log(displacement)
-
+//Ex:5, End
 
   
