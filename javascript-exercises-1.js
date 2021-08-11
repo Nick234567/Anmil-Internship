@@ -69,3 +69,33 @@ console.log(displacement())
 //Ex:5, End
 
   
+//Ex:6, Start 
+
+function Person(firstName, lastName, dob) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.dob = dob;
+
+  this.fullName = () => {
+    console.log(`${this.firstName} ${this.lastName}`);
+  };
+  this.age = () => {
+    let DOB = new Date(this.dob);
+
+    let today = new Date();
+    let age = today.getTime() - DOB.getTime();
+    let elapsed = new Date(age);
+    let year = elapsed.getYear() - 70;
+    let month = elapsed.getMonth();
+    let day = elapsed.getDay();
+    let ageTotal = `${year} years ${month} months and ${day} days`;
+    console.log(ageTotal);
+  };
+}
+
+const person = new Person("John", "Doe", "1996-5-8");
+
+person.fullName();
+person.age();
+
+// Ex:6, End
