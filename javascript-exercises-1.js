@@ -99,3 +99,23 @@ person.fullName();
 person.age();
 
 // Ex:6, End
+
+
+// Ex:7 Start 
+function recursion(num){
+    console.log(num);
+  if(num===0){
+    return 0;
+  }
+  else if(num>0){
+    recursion(num-1);
+  }
+  else{
+    recursion(num-1);
+  }
+  
+}
+
+recursion(6);
+
+//Ex:7, End
