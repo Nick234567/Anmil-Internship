@@ -112,7 +112,7 @@ function recursion(num){
     recursion(num-1);
   }
   else{
-    recursion(num-1);
+    recursion(num+1);
   }
   
 }
